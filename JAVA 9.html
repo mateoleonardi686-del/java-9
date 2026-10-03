@@ -1,0 +1,23 @@
+
+<DOCTYPE html>
+<body>
+
+Nombre:
+<input type="text">
+
+<br><br>
+
+Clave:
+<input type="password" onBlur="clave(this)">
+
+<script>
+
+function clave(caja) {
+    if (caja.value.length < 7 || caja.value.length > 20)
+        alert("La clave debe tener entre 7 y 20 caracteres");
+}
+
+</script>
+
+</body>
+</DOCTYPE html>
